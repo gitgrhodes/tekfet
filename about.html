@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+	<meta charset="utf-8">	
+	<link rel="stylesheet" href="proj.css">
+	<title>HTML 5 Project</title>
+</head>
+
+<body>
+
+<a href="#content100" title="Skip navigation and go to the content of the page."><img src="http://grhodes.userworld.com/htmlcss1/assets/1px.gif" alt="Skip to content" width="1" height="1" id="SkipNav"></a>
+	  <!-- I'm using the transparent pixel method since I'm really solving for AT's, not sighted users.  Narrators like NVDA, Jaws and MS's 
+	  	   Windows AT all pick up this link and behave as expected.  Hiding it this way keepst he UI clean.-->
+	  
+	  
+<div id="main">
+	  		   
+	  <header> <div id="lg-headline">ProjLogo</div> </header>
+	  
+	  <nav role="navigation">
+	   		<ul class="nav">
+				<li><a href="home.html" accesskey="h" title="home page for HTLM5 project"><span class="akey">H</span>ome</a></li>
+				<li><a href="posts.html" accesskey="p" title="archive of older posts"><span class="akey">P</span>osts</a></li>
+				<li><a href="photos.html" accesskey="o" title="gallery of recent photography">Ph<span class="akey">o</span>tos</a></li>
+				<li><a href="about.html" accesskey="A" title="more info about me including contact information"><span class="akey">A</span>bout</a></li>
+				<li><a href="Sitemap.html" accesskey="S" title="deep links to resrouces on this site"><span class="akey">S</span>itemap</a></li>
+			</ul>
+	  </nav>
+	  
+	  <!-- I'm not sure how frequently accesskeys are used, but they are highlighted here via CSS with contrasting background and
+	  	   contrasting text color.  If the style doesn't work for the customer, it's a simple CSS fix. -->
+
+  
+	<div id="content100" role="main">
+  		
+			<article class="log"> 
+				<h1>George Rhodes</h1>
+					<p>Eleven years of experience in the search marketing industry including product management, 
+					technical program management, operations, and advertiser account management.</p>
+					
+					<p>User and scenario-focused program manager, proven ability to own projects end-to-end.  Strong reputation for 
+					bringing clarity to complex projects, turning data in to meaningful insights that advance business 
+					objectives. Extensive experience managing projects in matrixed environments and with offshore engineering 
+					organizations; firm track record of building alignment across organizational boundaries.</p><br>
+				
+    				<h2 class="log-h2">Sunnysoft Inc. - Scottsdale, AZ</h2>
+    				 	
+						<p class="log-lead">Product Manager<br>
+						<time datetime="2011-01-01">2011</time> to <time datetime="2013-01-01">Present</time></p>
+					 
+            				 <p class="log-detail"> Product  Manager for Sunnysoft's editorial platform; built product MRDs, 
+        					 feature prioritization; led cross organizational programs to improve high-severity risk trends; 
+        					 led projects to improve QA monitoring</p><br>
+        
+            			<p class="log-lead">Program Manager<br>
+        				<time datetime="2007-01-01">2007</time> to <time datetime="2011-01-01">2011</time></p>
+        					 
+            				 <p class="log-detail"> Responsilbe for organizing and planning new prodcut onboarding and integration
+							 projects with newly acquired services</p><br>
+
+    			<h2 class="log-h2">Wilkins Research Services.</h2>
+    				 <p class="log-lead">Programmer<br>
+					 <time datetime="2010-01-01">Jan 2010</time> to <time datetime="2011-01-01">Jan 2011</time></p>
+					 
+    				 <p class="log-detail"> Survey interviewer and CATI programmer (IZU platform) for a market research campaigns
+					 focused on testing popular music trends and political opinion throughout the United States. </p><br><br>
+  			
+  			</article>
+
+
+<article>
+  		 <h1>Would you like my input on a project?</h1>
+		 <p>I'm an experienced Project Management Professional (PMP#99999) with 
+		 subject matter expertise in Online Marketing and risk management systems.  I can 
+		 offer consultative services or end-to-end project management expertise depending on 
+		 project scope and my availability.  Please send me your contact information and some 
+		 details about your project, and I will respond as soon as possible.</p>
+  
+  
+<form id="project" method="get" action="https:///students.oreillyschool.com/coderunner/formtester.php">
+			  
+ <fieldset><legend>Contact Info</legend>
+      
+       <p><label for="FName">First Name</label>
+       <input type="text" name="FName" id="FName" placeholder="Required" required></p>
+      
+       <p><label for="LName">Last Name</label>
+       <input type="text" name="LName" id="LName" placeholder="Required" required></p>
+      	 
+       <p><label for="email">Email Address</label>
+       <input type="email" name="Email" id="email" placeholder="Required" required></p>					 
+      
+       <p><label for="phone">Business Phone</label>
+       <input type="tel" name="phone" id="phone" placeholder="Mobile phone is fine."></p><br>
+      			
+      <p>Do you represent the customer or the sponsor?</p>
+      			
+      <p><label for="s-role">Sponsor</label>   
+      	  <input type="radio" name="role" id="s-role" value="sponsor"></p>
+      
+      <p><label for="c-role">Customer</label>   
+      	  <input type="radio" name="role" id="c-role" value="customer"></p>
+       
+      </fieldset><br>
+
+<fieldset><legend>Project Details</legend>
+
+      <p><label for="ProjText">Project Description</label>
+      <textarea id="ProjText" name="text" cols="50" rows="5" placeholder="Tell me a little about your project." required></textarea></p>
+      	  
+      <p><label for="s-date">Start Date</label>
+      <input type="date" name="s-date" id="s-date"></p>		
+      
+      <p><label for="e-date">End Date</label>
+      <input type="date" name="e-date" id="e-date"></p>		
+      
+      <p><label for="type">What type of service is required?</label> <!-- Using a select control to hint at the limited services offered by the site owner -->
+        <select id="type" name="type">
+        <option value="PM">Project Management</option>
+        <option value="Consult">Consulting</option>
+        <option value="Audit">External Audit</option>
+      </select></p>
+
+      </fieldset><br>				 
+
+
+<fieldset><legend>Performing Organization</legend>
+
+      <p>Let me know a little more about your compnay.</p>
+
+      <p><input type="checkbox" name="LgOrg" id="LgOrg" value="LgOrg">
+      <label for="LgOrg">I represent an organization of 100 or more FTEs.</label></p>
+      
+      <p><input type="checkbox" name="usco" id="usco" value="inUSA">
+      <label for="usco">My organization is located and incorportaed in the USA.</label></p>
+      			 
+      <p><input type="checkbox" name="pmo" id="pmo" value="hasPMO">
+      <label for="pmo">My company has an existing PMO.</label></p>
+      </fieldset>
+
+<p><input type="submit" value="Submit"></p>		 
+
+</form>
+</article>
+		
+      <footer>
+	  
+	  <p>&copy; 2013 ProjSite.Com, all rights reserved.</p>
+      
+	  <p>There isn't mutch to say here, but if I had disclaimers or a page dedicated to Terms of use, privice policy or access to social 
+	  media links, I would put them here.</p>
+      
+	  <nav role="navigation">
+	  <ul class="footnav">
+	  	  <li class="footnav"><a href="home.html" title="return to the home page" accesskey="h"><span class="akey">H</span>ome</a> | </li>
+		  <li class="footnav"><a href="http://en.wikipedia.org/wiki/Disclaimer" title="things i'm not accountable for" accesskey="d"><span class="akey">D</span>isclaimers</a> | </li>
+		  <li class="footnav"><a href="about.html" title="more about the page author" accesskey="a"><span class="akey">A</span>bout</a> | </li>
+		  <li class="footnav"><a href="http://tacma.net" title="legal information" accesskey="t"><span class="akey">T</span>erms of Service</a></li> 
+	  </ul></nav>
+	
+	 
+	  
+	  </footer></div>			 
+	  </div>	 
+  </body>
+
+</html>

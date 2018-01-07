@@ -1,0 +1,366 @@
+body { 				   			  				/* Setting some defaults in body to save me some work elsewhere */
+  margin-top:60px;
+  background-color:#FFFFFF;
+  font-family:Helvetica,Arial,sans-serif;
+  }
+ 
+ h1{
+ margin:15px 5px 0px 0px;
+ font-size:1.25em;
+  }
+ 
+  h2{
+ margin:15px 5px 0px 0px;
+ font-size:1em;
+  }
+ 
+ p{
+ margin:5px 0px 10px 0px;
+ font-size:1em;
+ }
+ 
+div#main{  				   		  	 			/* Main is may container to help me center the page and not have to style it for each sub-container */
+  width:1020px;
+  height:auto;
+  margin:auto;
+  background-color:#ffffff;
+
+  }
+
+header{    		 								/* Header will give me some geometry to play with when I layer on lg.headline.  A blog might put a panoramic image here */
+  height:75px;
+  border:1px solid #B6B6B6;						   
+  background-image:url('http://grhodes.userworld.com/htmlcss1/assets/headerbak.png');
+  margin-bottom:0px;
+  border:1px solid black;				   	   			  	  /* BORDER */		 
+  }
+  
+ul {
+margin-top:10px;
+ }
+ 
+li {
+margin-top:10px;
+ }
+
+
+ 
+div#lg-headline{  	   				 			/* LarGe headline will give me a foreground polygon to use for a text page title that is SEO friendly */ 
+  font-size:60px;
+  padding:5px 10px 5px 10px; 
+  color:#FFFFFF;
+  width:300px;
+  height:80px;
+  background-color:#0087C9;
+  position:relative;
+  left:-20px;
+  top:-16px;
+  border:1px solid black;
+  }
+
+ 
+
+form#project {                                  /* Style for the forms on the site */
+border:solid 1px black;
+width:500px;
+background-color:lightgrey;
+padding:10px 20px 10px 20px;
+ }
+
+input, textarea, select {
+resize:none;
+background-color:#FFFFC6;
+ }
+
+
+
+ nav{			  		 			 			/* the main NAV container */
+   height:auto;
+   padding:0px 0px 0px 0px; 
+   background-color:#FFFFFF;
+   margin-top:0px;
+   }
+
+ul.nav {   		 	   				 			/* The nested container holding the nav */
+  margin: 3px 0px 3px 0px;						/* need this in order to keep the ul.nav nested and sorta-centered in the nav container :-/ */
+  list-style-type:none;   
+  padding-left:0;
+  padding-top:6px;
+  padding-bottom:5px; 
+  text-align:center;
+  height:21px;	  								/* need to figure this out...not liking the border bottom */
+  }
+
+ul.nav li {		  						 		 /* gives me a centered nav */
+  display:inline;
+  }
+ 
+
+ul.nav a {	   	  		   	 		 	 		 /* the nav buttons themselves */
+  padding:5px 15px 7px 15px;
+  font-size:16px;
+  margin-right:5px;
+  background-color:#2C2C2C;
+  text-decoration:none;
+  color:#FFFFFF;
+  overflow:hidden;
+  }
+
+ul.nav a:link a:visited {		 	  			/* NAV Psudo Classes */
+  color:#FFFFFF;
+  background-color:#000000;
+  overflow:hidden;
+  }
+
+ul.nav a:hover {
+  color:#FF8000;
+  background-color:#FFFFFF;
+  border-bottom:#FFFFFF;
+  overflow:hidden;
+  }
+
+ul.nav a:active {
+  color:#FF0000;
+  }
+ 
+ul.sitemap {
+  font-size:0.8em;
+  }
+  
+ nav {
+ background-color:#2C2C2C;
+ height:auto;
+ 
+}
+ 
+a:hover .akey {	 					   			/* Alt styling the access keys.  prefer this over the previous implementation that disrupted the flow */ 
+font-weight:200;
+text-decoration:underline;
+color:#FF0000;
+
+} 
+
+                                                /* I'd like a simple. light style for the footer nav*/
+ ul li.footnav {
+ list-style-type:none;
+ display:inline;
+ font-style:normal;
+
+  }
+  
+ul li.footnav a, a:visited {
+color:#8080FF;
+text-decoration:none;
+ }
+
+
+ul li.footnav a:hover {
+color:#FFFFFF;
+text-decoration:underline;
+ }
+ 
+
+
+ 
+  			  			  						/* seperate containers for the layout options with nested content 
+												(including a 100%, 70/30 split). Everything else like header and 
+												footer are contained in MAIN */ 
+ 
+
+div#content100{	  		 						/* A 100% container for the home page and othe pages that would need full width */		 			
+width:100%;
+}
+
+div#content70{									/* A 70% container for pages that would need 70/30 split. */										  		 			 			
+width:70%;
+padding-right:10px;
+}
+
+div#content30{									/* A 30% container for pages that would need a 70/30 split */					   	  		 			 			
+width:30%;
+padding-left:5px;
+position:relative;
+left:500px;
+
+}
+
+
+article, section {  		  								 /* going with the blog concept for the home page.  on other pages, I may keep the style bu with a differnt identiier for things like the photo page */
+  padding:0px 3px 3px 10px;
+  border:1px solid #BABABA;					 		  	   	   /* BORDER */
+  line-height:23px;
+  }
+				
+footer {
+  border-top:1px solid #B6B6B6;
+  height:100px;
+  margin-top:10px;
+  margin-bottom:20px;
+  padding:50px 10px 20px 10px;
+  font-style:italic;
+  font-size:small;
+  text-align:center;
+  background-color:#2C2C2C;
+  color:#FFFFFF;
+  }
+
+
+ 
+div.tbox {		 		   	   					/* thumbnail box, container for pics */
+  height:270px;
+  text-align:center; 
+  padding:0px 0px 0px 0px;
+  float:left;
+  width:33%;
+  }
+ 
+.tbox-head {		  				  			/* Thumbmnail title; use h3, but apply this style  */
+  width:100%;
+  margin-top:5px;
+  font-size:1em;
+  }
+ 
+.tbox-thumb {						   			/* Thumbmnail pic container and a place to style the bits around the image  */
+  width:200px;
+  border:1px solid grey;
+  margin-bottom:0px;
+  }
+ 
+.img-detail {						   			/* style for the images in the image detail view  */
+  width:500px;
+  border:1px solid grey;
+  margin-bottom:0px;
+  }
+
+ 
+                                                /* Styling the details of the image tables where info for the gallery grid is displayed */
+th.img-table {
+text-align:left;
+ }
+
+td.img-table {
+padding:10px;
+ }
+ 
+tr.img-table {
+font-size:0.75em;
+ }
+
+tr.img-table:nth-child(even) {
+background-color:lightgrey;
+}
+
+caption.img-table {
+font-weight:bold;
+font-size:1.5em;
+border-bottom:1px solid black;
+ }
+
+.img-table-inset {
+  width:400px;
+  border: 1px solid #AFAFAF;
+  display:block;
+  margin:10px 20px 10px 10px;
+  padding:10px 10px 10px;
+  height:auto;
+  float:right;
+  position:relative;
+  top:40px;
+  }
+
+
+
+
+ 
+.tbox-foot {						   			/* Thumbmnail footer and a place to build in some buffer between instances and adjacent elements */
+  font-size:0.8em;
+  text-align:left;
+  padding:0px 20px 5px 30px;
+  }
+   
+ 
+ 
+   			 	  	  	   			   			/* Log can be used to present any kind of chronolgical data like a resume or a sailing log. */
+ 
+
+.log-lead {	 	  	  	   			   			/* LEAD - the near container for job title and time period */				
+  font-size:1em; 	  	  	   				
+  width:200px;
+  height:auto;
+  position:absolute;
+  padding:1px 3px 1px 3px;
+  margin-bottom:5px;
+   }
+
+.log-lead time {
+color:#000000;
+font-size:0.9em;
+
+ }   
+   
+   
+   
+.log-detail {	  								/* Detail - the far container for job details.  Needs an ending <br> for each record */		
+  font-size:1em;
+  width:600px;
+  height:auto;
+  position:relative;
+  left:170px;
+  padding:1px 3px 1px 3px;
+  margin-bottom:5px;
+   }
+
+    
+.log-h2 {   			 	  					/* style for when I want to create an artilce that is a log entry like a resume' */
+  width:100%;
+  font-size:1.2em;
+  border-bottom:1px solid #B6B6B6;
+  margin-bottom:0px;
+   }
+  
+aside {
+  width:200px;
+  border: 1px solid #AFAFAF;
+  display:block;
+  margin:10px 20px 10px 10px;
+  padding:10px 10px 10px;
+  height:auto;
+  background-color:lightgrey;
+  float:right;
+  font-size:1em;
+  font-style:italic;
+  color:#723A3A;
+  }
+
+.code {                                          /* Style for when I want to distinguish code from other parts of text*/                                                                  
+font-family:monospace;
+color:#008600;    
+font-size:large;                                                                                                                   
+ }
+
+abbr {                                          /* style for when I want to create an artilce that is a log entry like a resume' */                               
+background-color:#DCFFFB;
+ }
+
+ ul.clean {                                     /* Style for when I want lists without bullets*/                                                                                                 
+ list-style-type:none;
+ 
+  }
+ 
+img#SkipNav {				/* Use to keep IE from showing the jumplink.  I could do this inline, but this will give me a handy style to use if I need to hide a link elsewhere */
+border-style:none;
+}
+
+time {                      /* Punching up the date to aid in visually scanning throught the page to see a post by date */
+font-size:0.75em;
+color:#FF8000;
+ }
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+	<meta charset="utf-8">	
+	<link rel="stylesheet" href="proj.css">
+	<title>HTML 5 Project</title>
+</head>
+
+<body>
+
+<a href="#content100" title="Skip navigation and go to the content of the page."><img src="http://grhodes.userworld.com/htmlcss1/assets/1px.gif" alt="Skip to content" width="1" height="1" id="SkipNav"></a>
+	  <!-- I'm using the transparent pixel method since I'm really solving for AT's, not sighted users.  Narrators like NVDA, Jaws and MS's 
+	  	   Windows AT all pick up this link and behave as expected.  Hiding it this way keepst he UI clean.-->
+	  
+	  
+<div id="main">
+	  		   
+	  <header> <div id="lg-headline">ProjLogo</div> </header>
+	  
+	  <nav role="navigation">
+	   		<ul class="nav">
+				<li><a href="home.html" accesskey="h" title="home page for HTLM5 project"><span class="akey">H</span>ome</a></li>
+				<li><a href="posts.html" accesskey="p" title="archive of older posts"><span class="akey">P</span>osts</a></li>
+				<li><a href="photos.html" accesskey="o" title="gallery of recent photography">Ph<span class="akey">o</span>tos</a></li>
+				<li><a href="about.html" accesskey="A" title="more info about me including contact information"><span class="akey">A</span>bout</a></li>
+				<li><a href="Sitemap.html" accesskey="S" title="deep links to resrouces on this site"><span class="akey">S</span>itemap</a></li>
+			</ul>
+	  </nav>
+	  
+	  <!-- I'm not sure how frequently accesskeys are used, but they are highlighted here via CSS with contrasting background and
+	  	   contrasting text color.  If the style doesn't work for the customer, it's a simple CSS fix. -->
+
+  
+	<div id="content100" role="main">
+ 
+ 			
+		<section>
+
+				 <p>This site isn't that complex, but if you need a little orientation or a convenient place to crawl the content on this site,
+				 your are in the right place.</p>
+  		
+  		
+  			   		<ul>
+						<li><a href="home.html" title="Home page">Home</a> Blog Home page with navigational links and top line info.</li>
+						<li><a href="posts.html" title="Archived posts">Posts</a> Archive posts and additional content.</li>
+						<li><a href="photos.html" title="Photography by the author">Photos</a> Origonal photography by the author.</li>
+						<li><a href="about.html" title="More info about the author, work experience, etc.">About</a>  Professional background of the author.</li>
+						<li><a href="Sitemap.html" title="Deep links to content in this website">Sitemap</a>  Sitemap for the blog including deep links to content.</li>
+					</ul>
+		
+		</section>
+		
+	</div> 
+
+      <footer>
+	  
+	  <p>&copy; 2013 ProjSite.Com, all rights reserved.</p>
+      
+	  <p>There isn't mutch to say here, but if I had disclaimers or a page dedicated to Terms of use, privice policy or access to social 
+	  media links, I would put them here.</p>
+      
+	  <nav role="navigation">
+	  <ul class="footnav">
+	  	  <li class="footnav"><a href="home.html" title="return to the home page" accesskey="h"><span class="akey">H</span>ome</a> | </li>
+		  <li class="footnav"><a href="http://en.wikipedia.org/wiki/Disclaimer" title="things i'm not accountable for" accesskey="d"><span class="akey">D</span>isclaimers</a> | </li>
+		  <li class="footnav"><a href="about.html" title="more about the page author" accesskey="a"><span class="akey">A</span>bout</a> | </li>
+		  <li class="footnav"><a href="http://tacma.net" title="legal information" accesskey="t"><span class="akey">T</span>erms of Service</a></li> 
+	  </ul></nav>
+	
+	 
+	  
+	  </footer>
+	  </div>	 
+  </body>
+
+</html>

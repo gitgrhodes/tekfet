@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+	<meta charset="utf-8">	
+	<link rel="stylesheet" href="proj.css">
+	<title>HTML 5 Project</title>
+</head>
+
+<body>
+
+<a href="#content100" title="Skip navigation and go to the content of the page."><img src="http://grhodes.userworld.com/htmlcss1/assets/1px.gif" alt="Skip to content" width="1" height="1" id="SkipNav"></a>
+	  <!-- I'm using the transparent pixel method since I'm really solving for AT's, not sighted users.  Narrators like NVDA, Jaws and MS's 
+	  	   Windows AT all pick up this link and behave as expected.  Hiding it this way keepst he UI clean.-->
+	  
+	  
+<div id="main">
+	  		   
+	  <header> <div id="lg-headline">ProjLogo</div> </header>
+	  
+	  <nav role="navigation">
+	   		<ul class="nav">
+				<li><a href="home.html" accesskey="h" title="home page for HTLM5 project"><span class="akey">H</span>ome</a></li>
+				<li><a href="posts.html" accesskey="p" title="archive of older posts"><span class="akey">P</span>osts</a></li>
+				<li><a href="photos.html" accesskey="o" title="gallery of recent photography">Ph<span class="akey">o</span>tos</a></li>
+				<li><a href="about.html" accesskey="A" title="more info about me including contact information"><span class="akey">A</span>bout</a></li>
+				<li><a href="Sitemap.html" accesskey="S" title="deep links to resrouces on this site"><span class="akey">S</span>itemap</a></li>
+			</ul>
+	  </nav>
+	  
+	  <!-- I'm not sure how frequently accesskeys are used, but they are highlighted here via CSS with contrasting background and
+	  	   contrasting text color.  If the style doesn't work for the customer, it's a simple CSS fix. -->
+
+  
+	<div id="content100" role="main">
+ 
+		
+		<article>
+    		<h1>Image Gallery 1</h1>
+          		<p> I spend much of my down time exploring Seattle and our neighbouring cities.  When circumstances permit, I'll 
+				take my camera and try to get as much photographic experience as I can - given Seattle's challenging light.  
+				Here are a few examples of work from last year.</p>
+
+					<div class="tbox">
+						 <h3 class="tbox-head">Pier Supports</h3>
+						 <a href="#pier">
+						 <img class="tbox-thumb" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-1.jpg" alt="old pier supports off the coast of Washington state"></a>
+						 <p class="tbox-foot">Interesting "ruin" of an old pier near Seabrook.</p>
+					</div>
+					
+					<div class="tbox">
+						 <h3 class="tbox-head">Mariners bullpen</h3>
+						 <a href="#bullpen">
+						 <img class="tbox-thumb" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-2.jpg" alt="Mariners pitchers standing in a row"></a>
+						 <p class="tbox-foot">A relaxed moment with the Mariners before the opening of a game with the Angels.</p>
+					</div>
+					
+					<div class="tbox">
+						 <h3 class="tbox-head">Pacific Tower</h3>
+						 <a href="#tower">
+						 <img class="tbox-thumb" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-3.jpg" alt="The Pacific Tower building shot from Safeco Field"></a>
+						 <p class="tbox-foot">One of Seattle's most prominent buildings as seen from Safeco field.</p>
+					</div>	<br>
+
+    		<h1 id="pier">Washington's coast</h1>
+          		<p>Seabrook is a small community of homes and rental cottages located near the northern Washington coast 
+				(north of Grays Harbor).  The community has its own charm and is worth the time to plan afternoon shots that 
+				would take advantage of the evening light.  During my visit however, I spent most of my time planning shots around 
+				the coastline and the weathered exteriors of the older homes in neighboring communities. </p>
+					
+				<div class="img-table-inset">
+						 	<p>This is one of several images I took using my Panasonic Lumix GF2 micro four thirds camera.  The morning fog obscured 
+							the tidal boundary which made the subject of this composition more mysterious.  Originals were shot in color but the BW treatment 
+							was more interesting.</p><br>
+						 	
+							<table class="img-table">			
+							<caption class="img-table">Image Details</caption>
+ 						 		   <tr class="img-table">	 <th class="image-table">Setting</th>		  	  		  	  <th>Value</th></tr> 
+								   <tr class="img-table">	 <td class="image-table">ISO</td>						   	  <td>100</td></tr>
+								   <tr class="img-table">	 <td class="image-table">F Stop</td>						  <td>8.0</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Focal Length</td>					  <td>31mm</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Shutter Speed</td>			   		  <td>1/125 sec</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Location </td>				   		  <td>Seabrook, WA</td></tr>
+						 	</table>
+				</div>
+				<div>
+        		
+				<h3>Pier Supports</h3><a href="http://grhodes.userworld.com/htmlcss1/assets/project-img-1.jpg">
+        		<img class="img-detail" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-1.jpg" alt="old pier supports off the coast of Washington state"></a>
+				
+				</div>
+			</article>	  
+			
+			
+			<article>
+    		<h1 id="bullpen">The bullpen before the game</h1>
+          		<p>One advantage with bringing a camera to a baseball game is that the stadium provides many 
+				kinds of photo opportunities.  Even if you don't have the equipment to make the fast-motion shots work, 
+				there are always other places and subjects that will give you an interesting shot.  Safeco Field in Seattle Washington 
+				is a great place to bring a still camera whether it is for the architecture of the rolling roof, the carnival atmosphere 
+				or the sports.</p>
+					
+				<div class="img-table-inset">
+						 	<p>The "Pen" at Safeco is an open-air beer garden that faces the Mariners bull pen.  This shot was taken in the moments 
+							before the starting pitcher took the field.  The guys seem focused and little light-hearted in this shot.  The BW treatment 
+							was compensate for the brightness of the shot. </p>
+						 	
+							<table class="img-table">		
+							<caption class="img-table">Image Details</caption>
+ 						 		   <tr class="img-table">	 <th class="image-table">Setting</th>		  	  		  	  <th>Value</th></tr>
+								   <tr class="img-table">	 <td class="image-table">ISO</td>						   	  <td>250</td></tr>
+								   <tr class="img-table">	 <td class="image-table">F Stop</td>						  <td>5.0</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Focal Length</td>					  <td>124mm</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Shutter Speed</td>			   		  <td>1/250 sec</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Location </td>				   		  <td>Seattle, WA</td></tr>
+						 	</table>
+				</div>
+				<div>
+        		
+				<h3>Mariners bullpen</h3><a href="http://grhodes.userworld.com/htmlcss1/assets/project-img-2.jpg">
+        		<img class="img-detail" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-2.jpg" alt="Mariners pitchers standing in a row"></a>
+				
+				</div>
+			</article>	  
+			
+			
+			<article>
+    		<h1 id="tower">Art Deco in Beacon Hill</h1>
+          		<p>This is one of the more unique buildings in Seattle.  It was originally built in 1933 as a hospital for military personnel.  
+				It has since been a hospital the "poor and indigent" of Seattle and more recently the home of Amazon.com before it moved into 
+				its offices in West Lake Union. It is still being used today as commercial property with some of the facility is being leased to 
+				Seattle Central Community College. </p>
+					
+				<div class="img-table-inset">
+						 	<p>This shot doesn't do this building justice.  It was taken hand held from the second tier of Safeco Filed. 
+							You get a sense for the Art Deco style but to really appreciate it, you have to see it up close or at night 
+							when the city fires up the architectural lighting for the entire building.  My goal is to someday get a good time lapse shot 
+							of the building.</p>
+						 	
+							<table class="img-table">		
+							<caption class="img-table">Image Details</caption>
+ 						 		   <tr class="img-table">	 <th class="image-table">Setting</th>		  	  		  	  <th>Value</th></tr>
+								   <tr class="img-table">	 <td class="image-table">ISO</td>						   	  <td>160</td></tr>
+								   <tr class="img-table">	 <td class="image-table">F Stop</td>						  <td>4.5</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Focal Length</td>					  <td>84mm</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Shutter Speed</td>			   		  <td>1/160 sec</td></tr>
+								   <tr class="img-table">	 <td class="image-table">Location </td>				   		  <td>Seattle, WA</td></tr>
+						 	</table>
+				</div>
+				<div>
+        		
+				<h3>Pacific Tower</h3><a href="http://grhodes.userworld.com/htmlcss1/assets/project-img-3.jpg">
+        		<img class="img-detail" src="http://grhodes.userworld.com/htmlcss1/assets/project-img-3.jpg" alt="The Pacific Tower building shot from Safeco Field"></a>
+				
+				</div>
+			</article>	  
+						
+      <footer>
+	  
+	  <p>&copy; 2013 ProjSite.Com, all rights reserved.</p>
+      
+	  <p>There isn't mutch to say here, but if I had disclaimers or a page dedicated to Terms of use, privice policy or access to social 
+	  media links, I would put them here.</p>
+      
+	  <nav role="navigation">
+	  <ul class="footnav">
+	  	  <li class="footnav"><a href="home.html" title="return to the home page" accesskey="h"><span class="akey">H</span>ome</a> | </li>
+		  <li class="footnav"><a href="http://en.wikipedia.org/wiki/Disclaimer" title="things i'm not accountable for" accesskey="d"><span class="akey">D</span>isclaimers</a> | </li>
+		  <li class="footnav"><a href="about.html" title="more about the page author" accesskey="a"><span class="akey">A</span>bout</a> | </li>
+		  <li class="footnav"><a href="http://tacma.net" title="legal information" accesskey="t"><span class="akey">T</span>erms of Service</a></li> 
+	  </ul></nav>
+	
+	 
+	  
+	  </footer></div>
+	  </div>	 
+  </body>
+
+</html>
